@@ -1,0 +1,45 @@
+<!--Treeshan Code for tiktokk code
+adopted from tiktoktoe pdf giving in class with some added things -->>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Treeshan Tic-Tac-Toe Game</title>
+    <!-- Link to external CSS file -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+     <!-- Link to external JavaScript file -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Treeshan Tic-Tac-Toe</h1>
+    <h2>It's X's turn!</h2>
+    <div class="flex-container flex-column">
+        <div class="flex-container flex-wrap" id="board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <br>
+        <button id="reset-button">Reset</button>
+    </div>
+    <h3>Score:</h3>
+    <p id="scoreX">X: 0</p>
+    <p id="scoreO">O: 0</p>
+    <label for="starter">Who goes first?</label>
+    <select id="starter" onchange="setFirstTurn()">
+        <option value="X">X</option>
+        <option value="O">O</option>
+    </select>
+
+     
+     
+</body>
+</html>
